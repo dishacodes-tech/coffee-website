@@ -1,0 +1,133 @@
+/* Benefits Section */
+#plans {
+  background: #f2f0ed;
+  text-align: center;
+  color: #5a5a5a;
+  padding: 80px 40px;
+  border-radius: 20px;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+#plans h2 {
+  color: #3a2e2a;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#plans > p {
+  font-size: 1rem;
+  color: #5a5a5a;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* === Container === */
+#plans .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* === Individual Plans === */
+.benefits {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.description {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.description h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 10px;
+}
+
+.description p {
+  font-size: 0.95rem;
+  color: #5a5a5a;
+  line-height: 1.5;
+}
+
+/* === Pricing Section === */
+.Pricing h2 {
+  color: #2c2c2c;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.Pricing sub {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 1rem;
+}
+
+#standard .logo { color: #84510a; }
+#standard sub { background: #f7dbb4; color: #713e2d; }
+
+#gold .logo { color: #f7be54; }
+#gold sub { background: #f4e2b0; color: #b68d40; }
+
+#platinum .logo { color: #30302f; }
+#platinum sub { background: #e5e4e2; color: #1c1c1c; }
+
+/* Button */
+.bttn {
+  background-color: #000;
+  border: none;
+  border-radius: 50px;
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  color: #a07c3b;
+  text-transform: uppercase;
+  box-shadow: 0 0.8rem 2rem rgba(38, 37, 36, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.bttn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #171617, #252424);
+}
+
+/*  Responsive Design */
+@media (max-width: 900px) {
+  #plans {
+    padding: 50px 20px;
+  }
+
+  .benefits {
+    flex: 1 1 100%;
+  }
+
+  .description {
+    text-align: center;
+  }
+}

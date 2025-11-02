@@ -1,0 +1,119 @@
+/*  HERO SECTION  */
+#home {
+  color: black;
+  position: relative;
+  background: url('media/background.jpg') no-repeat center/cover fixed;
+  padding: 80px;
+  border-radius: 20px;
+  margin: 50px;
+  text-align: left;
+}
+
+#home .container {
+  display: inline-block;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+#home h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#home p {
+  font-weight: 300;
+  font-size: 1.25rem; 
+  line-height: 1.6;
+}
+
+/* BUTTON  */
+.btn {
+  background-color: black;
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 0 0.8rem 2rem rgba(38, 37, 36, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #171617, #252424);
+  box-shadow: 0 1rem 3rem rgba(5, 5, 5, 0.5);
+}
+
+/* RESPONSIVE */
+
+/* Laptops & Tablets  */
+@media (max-width: 1024px) {
+  #home {
+    padding: 60px;
+    margin: 30px;
+  }
+
+  #home h1 {
+    font-size: 2.5rem;
+  }
+
+  #home p {
+    font-size: 1.1rem;
+  }
+
+  #home .container {
+    max-width: 90%;
+    margin-right: 0;
+  }
+}
+
+/* Tablets  */
+@media (max-width: 768px) {
+  #home {
+    padding: 50px 25px;
+    margin: 20px;
+    background-attachment: scroll; /* fixes mobile lag */
+    text-align: center;
+  }
+
+  #home .container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Phones  */
+@media (max-width: 480px) {
+  #home {
+    padding: 40px 15px;
+    margin: 15px;
+  }
+
+  #home h1 {
+    font-size: 1.6rem;
+  }
+
+  #home p {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.8rem;
+  }
+}

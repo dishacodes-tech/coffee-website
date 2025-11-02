@@ -1,0 +1,184 @@
+/* CONTACT SECTION */
+
+#contact {
+  color: black;
+  background: #f2f0ed;
+  padding: 60px 40px;
+  border-radius: 20px;
+  margin: 0 40px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+
+.newsletter {
+  position: relative;
+  background: url(media/contact.jpeg) no-repeat center/cover;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.news {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  padding: 30px 40px;
+  color: #fff;
+  max-width: 600px;
+}
+
+.news h1 {
+  letter-spacing: 1px;
+  font-size: 2.3rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+/* Email*/
+.email-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 50px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.email-section input[type="email"] {
+  flex: 1;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.email-section input[type="email"]:focus {
+  border-color: #a07c3b;
+}
+
+.email-section .btn {
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background-color: #3a2004;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.email-section .btn:hover {
+  background-color: #a07c3b;
+  transform: translateY(-2px);
+}
+
+/* Contact */
+#contact .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.6);
+  max-width: 1200px;
+  margin: auto;
+}
+
+#contact .box {
+  max-width: 700px;
+  text-align: left;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-info ul {
+  list-style: none;
+  color: #1c1003;
+  line-height: 2rem;
+  padding: 0;
+  border-bottom: 1px solid rgba(169, 169, 169, 0.6);
+}
+
+.contact-info .social {
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+  margin-top: 15px;
+}
+
+.contact-info a {
+  color: #3a2004;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #a65c0d;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  margin: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/*  RESPONSIVE ADJUSTMENTS */
+@media (max-width: 900px) {
+  #contact {
+    padding: 40px 20px;
+    margin: 0 20px;
+  }
+
+  #contact .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .news {
+    text-align: center;
+    max-width: 100%;
+    padding: 25px;
+  }
+
+  .news h1 {
+    font-size: 1.8rem;
+  }
+
+  .email-section {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .contact-info {
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
