@@ -19,7 +19,7 @@ Designed to deliver a warm, inviting experience with smooth visuals, simple navi
 ## 👩‍💻 Author
 **Disha Mahajan**  
 🔗 [GitHub](https://github.com/dishacodes-tech)  
-🔗 [LinkedIn](https://www.linkedin.com/in/disha-mahajan-9085abc/)
+🔗 [LinkedIn](https://www.linkedin.com/in/dishamahajan1/)
 
 ---
 
