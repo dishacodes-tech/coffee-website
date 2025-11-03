@@ -1,5 +1,4 @@
-/* CONTACT SECTION */
-
+/*contact */
 #contact {
   color: black;
   background: #f2f0ed;
@@ -9,7 +8,6 @@
   letter-spacing: 1px;
   position: relative;
 }
-
 
 .newsletter {
   position: relative;
@@ -35,28 +33,30 @@
   margin-bottom: 20px;
 }
 
-/* Email*/
 .email-section {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding: 15px 20px;
+  padding: 18px 25px;
   border-radius: 50px;
-  flex-wrap: wrap;
   gap: 12px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .email-section input[type="email"] {
   flex: 1;
-  min-width: 200px;
-  max-width: 400px;
+  width: 100%;
   padding: 12px 15px;
   border: 2px solid #ccc;
   border-radius: 8px;
-  outline: none;
   font-size: 1rem;
+  outline: none;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .email-section input[type="email"]:focus {
@@ -65,13 +65,14 @@
 
 .email-section .btn {
   border: none;
-  padding: 12px 26px;
+  padding: 12px 24px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
-  color: white;
+  color: #fff;
   background-color: #3a2004;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  flex-shrink: 0;
 }
 
 .email-section .btn:hover {
@@ -79,7 +80,6 @@
   transform: translateY(-2px);
 }
 
-/* Contact */
 #contact .container {
   display: flex;
   flex-direction: row;
@@ -94,7 +94,6 @@
 
 #contact .box {
   max-width: 700px;
-  text-align: left;
 }
 
 .contact-info {
@@ -131,7 +130,6 @@
   transform: scale(1.1);
 }
 
-/* Footer */
 footer {
   margin: 10px;
   padding: 30px;
@@ -144,10 +142,10 @@ footer {
   text-align: center;
 }
 
-/*  RESPONSIVE ADJUSTMENTS */
-@media (max-width: 900px) {
+/* media queries */
+@media (max-width: 1024px) {
   #contact {
-    padding: 40px 20px;
+    padding: 50px 30px;
     margin: 0 20px;
   }
 
@@ -159,26 +157,84 @@ footer {
 
   .news {
     text-align: center;
-    max-width: 100%;
+    max-width: 90%;
     padding: 25px;
   }
 
   .news h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .email-section {
+    max-width: 600px;
+    padding: 16px 20px;
+  }
+
+  .email-section input[type="email"] {
+    font-size: 0.95rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .news h1 {
+    font-size: 1.7rem;
   }
 
   .email-section {
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 20px;
   }
 
+  .email-section input[type="email"],
+  .email-section .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .email-section .btn {
+    padding: 12px;
+  }
+
   .contact-info {
-    padding: 20px;
+    padding: 25px;
   }
 
   footer {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 35px 15px;
+    margin: 0 10px;
+  }
+
+  .news h1 {
+    font-size: 1.5rem;
+  }
+
+  .email-section {
+    padding: 15px;
+    gap: 10px;
+    border-radius: 20px;
+  }
+
+  .email-section input[type="email"],
+  .email-section .btn {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .contact-info {
+    padding: 15px;
+  }
+
+  footer {
+    padding: 20px;
+    font-size: 0.85rem;
   }
 }
