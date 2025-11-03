@@ -131,7 +131,7 @@ nav a:hover {
 }
 
 /* Small Phones  */
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .brand {
     font-size: 1rem;
   }
@@ -141,7 +141,7 @@ nav a:hover {
   }
 
   nav a {
-    font-size: 0.74rem;
+    font-size: 0.72rem;
     padding: 5px 8px;
   }
 }
