@@ -119,13 +119,13 @@
   margin-top: 15px;
 }
 
-.contact-info a {
+.contact-info i {
   color: #3a2004;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
-.contact-info a:hover {
+.contact-info i:hover {
   color: #a65c0d;
   transform: scale(1.1);
 }
